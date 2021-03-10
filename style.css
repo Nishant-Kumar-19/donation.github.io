@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+p {
+  font-size: 0.9rem;
+  color: rgb(122, 121, 121);
+}
+
+/* ********************************** Header section ******************************* */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("./image/children.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.navbar:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  bottom: 0%;
+  right: 0;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.nav-item a {
+  color: rgb(248, 238, 238) !important;
+  font-weight: 400;
+  margin: 0 1rem;
+}
+
+.nav-item a:hover {
+  font-weight: bold !important;
+  color: #fff !important;
+  transition: 0.2s;
+}
+.nav-item .active {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.header-section {
+  width: 100%;
+  height: inherit;
+  color: #fff;
+  position: relative;
+}
+
+.center-div {
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.center-div h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.center-div h1 {
+  font-size: 4rem;
+}
+
+.donate-button {
+  margin-top: 5rem;
+}
+.donate-button a {
+  border: 1px solid white;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 1rem 6rem;
+  outline: none;
+  background-color: white;
+  color: #40ac9d;
+  font-size: 2rem;
+}
+
+.donate-button a:hover {
+  text-decoration: none;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+}
+
+/**************************** About Section **************************************/
+
+.about {
+  background: linear-gradient(to right, rgba(6, 138, 98), rgb(8, 123, 143));
+  width: 100%;
+  height: 100vh;
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+}
+.about h1 {
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.extra-div {
+  width: 50%;
+  background-color: white;
+  padding: 40px !important;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.extra-div:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px);
+}
+
+.extra-div i {
+  color: #2fccd0;
+}
+
+/* ************************** Contact Us ************************** */
+.contactus {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+  position: relative;
+}
+.contactus:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(331deg, #16c9f6 55%, #fff 0%);
+  z-index: -1;
+}
+
+input,
+textarea {
+  border-radius: 10px !important;
+}
+
+.form-button button {
+  border: 1px solid #50d1c0;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0 !important;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  background: transparent;
+}
+
+form:hover .form-button button {
+  background: #fff;
+  color: #50d1c0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+::placeholder {
+  font-size: 0.8rem;
+}
+
+/* ******************************* Footer section *************************** */
+.footer-section {
+  width: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  position: relative;
+  padding: 1rem 0;
+}
+.footer-section p {
+  color: white !important;
+  margin: 1rem 0;
+}
+
+/*******************************************************************************/
+/* *****************************DONATION PAGE **********************************/
+.payment {
+  background: url("./image/children-876543.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  padding: 2rem 3rem;
+  border-radius: 15px;
+}
+.content h2 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.content p {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+/* ***************************Responsiveness of website *****************************/
+
+@media (max-width: 768px) {
+  .about,
+  .contactus {
+    height: auto;
+    padding-top: 50px;
+  }
+
+  .extra-div {
+    transform: translateY(0px);
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    text-align: center !important;
+  }
+}
+@media (max-width: 360px) {
+  .navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    opacity: 1;
+    outline: none;
+    border: none;
+  }
+}
+
+@media (max-width: 325px) {
+  .header-section {
+    margin-top: 22%;
+    text-align: center;
+  }
+  .donate-button a {
+    padding: 0.8rem 2rem;
+  }
+  .donate-button {
+    margin: 2rem 0;
+  }
+}
